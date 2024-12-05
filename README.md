@@ -13,6 +13,9 @@ Inside Single_core is the Julia script Find_neighborhs.jl which will find neighb
 Inside Parallel_core is a Julia script, args_find_neighborhs.jl and a script called run_script_parallel.sh. The script run_script_parallel.sh will run args_find_neighborhs.jl in parallel using 4 cores and find neighbours under 100 meters away.   
 The different scripts use a file: '/dtu/blackhole/19/155129/csv_without_duplicates_long_lat_family.csv' which is created by Graphic_graph.ipynb, but can also be found on the DTU hpc system.  
 
+# Plots
+In the plot folder the code to recreate many of the plots in the project
+
 
 
 
