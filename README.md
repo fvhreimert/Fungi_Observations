@@ -11,7 +11,7 @@ The dataset used for this project is too large to include directly in the GitHub
 ## Project Structure
 
 ### 1. **Frequent Itemsets**
-The `frequent_itemsets` folder contains the script `get_frequent_itemsets_pyspark.py`, which is used to find the frequent itemsets from the dataset. This script links to a pickle file on the **HPC system** that is accessible to all users on the **HPC system**.
+The `frequent_itemsets` folder contains the script `get_frequent_itemsets_pyspark.py`, which is used to find the frequent itemsets from the dataset. This script links to a pickle file on the **DTU HPC system** that is accessible to all users on the **HPC system**.
 
 ### 2. **Finding Mushrooms Within 100 Meters of Each Other**
 The `Find_neighbours` folder contains two subfolders: **Parallel_core/** and **Single_core/**.
