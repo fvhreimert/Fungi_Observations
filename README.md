@@ -3,18 +3,21 @@
 The dataset is too large to add in the github repository, but can be downloaded using this link:
 GBIF.org (30 October 2024) GBIF Occurrence Download https://doi.org/10.15468/dl.g6zcq2
 
-# Frequent itemsets
+## Frequent itemsets
 The frequent_itemsets folder contains get_frequent_itemsets_pyspark.py which will find the frequent_itemsets.
 The file links to a "pickle file" on the HPC-system which everyone has the right to access.
 
-# Constructing the network
-The NetworkConstruction folder contains two folders Parallel_core/ and Single_core/   
+## Finding the mushroom within a 100 meter of each other
+The Find_neighbours folder contains two folders Parallel_core/ and Single_core/   
 Inside Single_core is the Julia script Find_neighborhs.jl which will find neighbours which are under 100 meters away using 1 core   
 Inside Parallel_core is a Julia script, args_find_neighborhs.jl and a script called run_script_parallel.sh. The script run_script_parallel.sh will run args_find_neighborhs.jl in parallel using 4 cores and find neighbours under 100 meters away.   
 The different scripts use a file: '/dtu/blackhole/19/155129/csv_without_duplicates_long_lat_family.csv' which is created by Graphic_graph.ipynb, but can also be found on the DTU hpc system.  
 
-# Plots
-In the plot folder the code to recreate many of the plots in the project
+## Creating the graph and running the clustering algorithms
+The file Graphic_graph.ipynb contains code for creating the graph and applying the clustering algorithms. Additionally it contains the code for finding the muschrooms within a 100 meters of each others using the first algorithm described in the project. 
+
+## Plots
+In the plot folder the code to recreate many of the plots in the project can be found. 
 
 
 
